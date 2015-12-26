@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <!-- Right Side -->
+        <reference name="right">
+            <block type="recentsold/resendlysold" name="recentsold_right" as="recentsold_right" after="-">
+				<action method="setTemplate" ifconfig="recentsold_tab/recentsold_setting/recentsold_active">
+					<template helper="recentsold/data/postion_right" />
+				</action>
+			</block>
+        </reference>
+        
+		<!-- Left Side -->
+		<reference name="left">
+			<block type="recentsold/resendlysold" name="recentsold_left" as="recentsold_left" after="-">
+				<action method="setTemplate" ifconfig="recentsold_tab/recentsold_setting/recentsold_active">
+					<template helper="recentsold/data/postion_left" />
+				</action>
+			</block>
+		</reference>
+    </default>
+</layout>

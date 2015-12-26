@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Learn_Recentsold>
+            <version>1.0.0</version>
+        </Learn_Recentsold>
+    </modules>
+    
+    <frontend>
+		<routers>
+			<recentsold>
+				<use>standard</use>
+				<args>
+					<module>Learn_Recentsold</module>
+					<frontName>recentsold</frontName>
+				</args>
+			</recentsold>
+		</routers>
+		<layout>
+			<updates>
+				<recentsold>
+					<file>learn/recentsold.xml</file>
+				</recentsold>
+			</updates>
+		</layout>
+	</frontend>
+    
+    <global>
+		<blocks>
+            <recentsold>
+                <class>Learn_Recentsold_Block</class>
+            </recentsold>
+        </blocks>
+		
+		<helpers>
+			<recentsold>
+				<class>Learn_Recentsold_Helper</class>
+			</recentsold>
+		</helpers>
+		<models>
+			<recentsold>
+				<class>Learn_Recentsold_Model</class>
+			</recentsold>
+		</models>
+    </global>
+    
+	<default>
+		<recentsold_tab>
+			<recentsold_setting>
+				<recentsold_active>1</recentsold_active>
+				<recentsold_position>2</recentsold_position>
+				<recentsold_title>Recently Sold Products</recentsold_title>
+				<recentsold_display_count>5</recentsold_display_count>
+			</recentsold_setting>
+		</recentsold_tab>
+	</default>
+</config>

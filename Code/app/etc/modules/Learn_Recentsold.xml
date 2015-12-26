@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Learn_Recentsold>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Learn_Recentsold>
+    </modules>
+</config>
